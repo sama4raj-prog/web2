@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Javascript Array Mapping</h1>
+        <p id="ArrayDisplay"></p>
+        <p>Multiply each element in the array by 10:</p>
+        <p id="result"></p>
+
+        <script>
+            var num = [23, 35, 45, 56, 67];
+            document.getElementById("ArrayDisplay").innerHTML = "Original array: " + num;
+            function multiply(num) {
+                return num*10;
+            }
+            var newArray = num.map(multiply);
+            document.getElementById("result").innerHTML = newArray;
+        </script>
+    </body>
+</html>
