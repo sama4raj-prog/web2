@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <h2>Javascript async/ await</h2>
+    <p id="result"></p>
+
+    <script>
+       async function add(a,b) {
+        let result = await a+b;
+        display(result);
+       }
+         function display(output) {
+            document.getElementById("result").innerHTML = "The sum of a and b is " + output;
+         }
+         add(5,10);
+    </script>
+</body>
+
+</html>
