@@ -17,12 +17,12 @@
             
             MyForm.addEventListener("submit", function(event) {
                 event.preventDefault();
-                var newtask = MyInput.value;
+                createItem(MyInput.value)
                 })
                 
                 function createItem(InputItems) {
-                var Items = `<li>${InputItems} <button onclick="DeleteElement(this)">Delete</button></li>`;
-                MyItems.insertAdjacentElement("beforeend", Items);
+                var Items = `<li>${InputItems} <button onclick="deleteElement(this)">Delete</button></li>`;
+                MyItems.insertAdjacentHTML("beforeend", Items);
                 MyInput.value = "";
                 MyInput.focus();
                 }
